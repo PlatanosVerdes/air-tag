@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>air-tag</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <aside id="panel">
+    <h1>air-tag</h1>
+    <div class="ranges">
+      <button data-days="1">24 h</button>
+      <button data-days="7" class="active">7 days</button>
+      <button data-days="30">30 days</button>
+      <button data-days="0">All</button>
+    </div>
+    <label class="auto">
+      <input type="checkbox" id="autorefresh" checked /> Auto-refresh (60 s)
+    </label>
+    <dl id="stats">
+      <dt>Points</dt><dd id="stat-count">–</dd>
+      <dt>Last seen</dt><dd id="stat-last">–</dd>
+      <dt>Battery</dt><dd id="stat-batt">–</dd>
+      <dt>Status</dt><dd id="stat-health">–</dd>
+    </dl>
+    <p class="hint">Timezone: <span id="stat-tz">–</span></p>
+  </aside>
+  <main id="map"></main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

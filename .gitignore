@@ -1,0 +1,21 @@
+# Secrets and personal data — NEVER commit these
+.env
+data/
+*.record
+*.plist
+*.keys
+keys/
+private_key
+account.json
+accessory.json
+*.db
+last_report.json
+ani_libs.bin
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
